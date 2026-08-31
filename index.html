@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Voice Jarvis Prototype</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 1rem; max-width: 800px; margin: auto; }
+    .controls { display:flex; gap:1rem; margin-bottom:1rem; }
+    button { padding: .6rem 1rem; font-size: 1rem; }
+    #transcript { border:1px solid #ddd; padding:1rem; min-height:80px; white-space:pre-wrap; }
+    #log { margin-top:1rem; color:#333; }
+  </style>
+</head>
+<body>
+  <h1>Voice Jarvis — Prototype</h1>
+  <p>Click Start, speak a command (e.g., "Send SMS to +1-555-1234: I'm running late"). The app will speak back a confirmation.</p>
+
+  <div class="controls">
+    <button id="startBtn">Start Listening</button>
+    <button id="stopBtn" disabled>Stop</button>
+    <button id="sendBtn">Send Transcript</button>
+  </div>
+
+  <div id="transcript" placeholder="Transcript will appear here"></div>
+  <div id="log"></div>
+
+  <script src="app.js"></script>
+</body>
+  </html>
